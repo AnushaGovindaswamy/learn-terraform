@@ -1,6 +1,6 @@
 output "list" {
-var.list[3]
+value = var.list[3]
 }
-output "list" {
-var.list["number"]
+output "dict" {
+value = var.dict["number"]
 }
