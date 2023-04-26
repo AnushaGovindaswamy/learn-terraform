@@ -2,8 +2,8 @@ variable "sample" {
 default = "anusha govindaswamy"
 }
 output "sample" {
-value = var.sample
-value = "the output = ${var.sample}"
+
+value = "the output is ${var.sample}"
 }
 variable "number" {
 default = 123
