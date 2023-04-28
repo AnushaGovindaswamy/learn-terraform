@@ -4,7 +4,7 @@ default = ["banana","mango","apple","orange","grapes","avacodo"]
 resource "null_resource" "test" {
 
 count = length(var.fruits)
-  provisioner "remote-exec" {
+  provisioner "local-exec" {
 name = var.fruits[count.index]
 }
 
