@@ -1,7 +1,7 @@
 variable "fruits" {
 default = ["banana","mango","apple","orange","grapes","avacodo"]
 }
-resource "nullresource" "test" {
+resource "null_resource" "test" {
 
 count = length(var.fruits)
 tags
