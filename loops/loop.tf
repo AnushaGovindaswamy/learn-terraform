@@ -5,7 +5,7 @@ resource "null_resource" "test" {
 
 count = length(var.fruits)
   provisioner "local-exec" {
-name = var.fruits[count.index]
+command  = var.fruits[count.index]
 }
 
 }
