@@ -1,5 +1,5 @@
 variable "fruits" {
-default = [banana,mango,apple,orange,grapes,avacodo]
+default = ["banana","mango","apple","orange","grapes","avacodo"]
 }
 resource "nullresource" "test" {
 
