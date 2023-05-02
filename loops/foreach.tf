@@ -26,3 +26,12 @@ provisioner "local-exec" {
 
 }
 }
+variable "makeup" {
+default = ["foundation","concealer","lipstick"]
+}
+resource "null_resource" "example" {
+for_each = toset(var.makeup)
+provisioner "local-exec" {
+command = "echo ${each.key}"
+}
+}
