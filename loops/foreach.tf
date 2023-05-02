@@ -22,8 +22,6 @@ for_each = var.dictionary
 
 provisioner "local-exec" {
  command = "echoName - ${each.value["price"]} - ${each.value["name"]}"
-
-
 }
 }
 variable "makeup" {
