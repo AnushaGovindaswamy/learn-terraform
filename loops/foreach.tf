@@ -21,7 +21,8 @@ resource "null resource" "sample" {
 for_each = var.dictionary
 
 provisioner "local-exec" {
+ command = "echo  Name - ${each.value["price"]} - ${each.value["name"]}"
 
-command = "echo ${each.key} -${each.value["price"] -${each.value["name"]}"
+# command = "echo ${each.key} -${each.value["price"] -${each.value["name"]}"
 }
 }
