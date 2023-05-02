@@ -2,7 +2,7 @@ variable "dictionary" {
 default = {
 telugu ={
  price = 150
- name"tdic"
+ name="tdic"
 }
  hindi= {
 price =180
@@ -16,7 +16,7 @@ price =180
 
 }
 
-resource "null resource" "sample" {
+resource "null_resource" "sample" {
 
 for_each = var.dictionary
 
