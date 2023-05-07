@@ -1,16 +1,16 @@
-resource "nullresource" "provisioner" {
+resource "null_resource" "provisioner" {
 
 provisioner "local-exec" {
 command ="echo hello ${input}"
 }
 }
-resource "nullresource" "provisioner2" {
+resource "null_resource" "provisioner2" {
 
 provisioner "local-exec" {
 command ="echo hello"
 }
 }
-resource "nullresource" "provisioner3" {
+resource "null_resource" "provisioner3" {
 
 provisioner "local-exec" {
 command ="echo hello"
