@@ -1,7 +1,7 @@
 resource "nullresource" "provisioner" {
 
 provisioner "local-exec" {
-command ="echo hello"
+command ="echo hello ${input}"
 }
 }
 resource "nullresource" "provisioner2" {
@@ -16,3 +16,4 @@ provisioner "local-exec" {
 command ="echo hello"
 }
 }
+variable "input"{}
