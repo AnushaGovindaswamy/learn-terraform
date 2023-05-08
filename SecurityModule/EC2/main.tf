@@ -7,4 +7,5 @@ resource "aws_instance" "instance" {
   tags = {
     Name = "test"
   }
+  }
   variable "securitygrpid"{}
